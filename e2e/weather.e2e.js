@@ -27,7 +27,7 @@ ava.test('It should succeed when parameters are correct', t => request(app)
     t.true(response.text.length >= 0); // this varies with the weather
   }));
 
-ava.test.only('It should lock out after 5 requests', (t) => {
+ava.test('It should lock out after 5 requests', (t) => {
   const promises = [];
   for (let i = 0; i < 5; i += 1) {
     promises.push(
