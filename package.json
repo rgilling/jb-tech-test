@@ -1,0 +1,29 @@
+{
+  "name": "jbhifi-tech",
+  "version": "1.0.0",
+  "description": "JB Hifi Tech Challenge",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node ./index.js",
+    "tests": "ava -t 30s --verbose tests/*.tests.js",
+    "e2e": "ava -t 30s --verbose e2e/*.e2e.js"
+  },
+  "author": "Richard Gilling <Richard.Gilling@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "proxyquire": "^2.0.1",
+    "sinon": "^6.1.5",
+    "supertest": "^3.1.0",
+    "supertest-as-promised": "^4.0.2"
+  }
+}
