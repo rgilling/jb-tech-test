@@ -38,20 +38,19 @@ Try a few invalid requests:
 - http://localhost:9080/weather?country=au&city=Invalid&key=87879849838292
 
 
-
 ### Dependencies: 
 
-express - For hosting the service
-lodash - Object utilities, specifically get.
-request - Library for making an http request from NodeJS.
+- express - For hosting the service
+- lodash - Object utilities, specifically get.
+- request - Library for making an http request from NodeJS.
 
 ### Dev Dependencies:
 
-eslint & extensions - Uses a modified Airbnb lint configuration.
-sinon - For mocking and stubbing.
-proxyquire - For stubbing dependencies without require bugs.
-ava - Test runner like Mocha etc. but has assertions built in.
-supertest - Used in the e2e tests. (supertest-as-promised)
+- eslint & extensions - Uses a modified Airbnb lint configuration.
+- sinon - For mocking and stubbing.
+- proxyquire - For stubbing dependencies without require bugs.
+- ava - Test runner like Mocha etc. but has assertions built in.
+- supertest - Used in the e2e tests. (also supertest-as-promised)
 
 
 
