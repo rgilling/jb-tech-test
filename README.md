@@ -1,28 +1,13 @@
 # JB Hifi Tech Challenge
 
-
 ## Getting Started
 Clone the repository:
 
-git clone ``. //TODO: ONCE IT'S PUBLISHED
+`git clone git@github.com:rgilling/jb-tech-test.git`
 
 then install dependencies:  `npm install`
 
-## How to run the server?
-
-`npm start`
-
-Then use the sample request:
-
-http://localhost:9080/weather?country=au&city=Sydney&key=87879849838292
-
-Send five requests, and on the fifth you should be blocked with a 429 status and an error code.
-
-Try a few invalid requests:
-http://localhost:9080/weather?country=au&city=Sydney&key=8789838292
-http://localhost:9080/weather?country=au&key=87879849838292
-http://localhost:9080/weather?country=au&city=Invalid&key=87879849838292
-
+## First run the test to make sure it's working okay
 
 To run unit tests
 
@@ -35,6 +20,23 @@ To run integration tests
 To run eslint
 
 `npm run lint`
+
+## How to run the server?
+
+`npm start`
+
+Then use the sample request:
+
+http://localhost:9080/weather?country=au&city=Sydney&key=87879849838292
+
+Send five requests, and on the sixth you should be blocked with a 429 status and an error code.
+
+Try a few invalid requests:
+
+- http://localhost:9080/weather?country=au&city=Sydney&key=8789838292
+- http://localhost:9080/weather?country=au&key=87879849838292
+- http://localhost:9080/weather?country=au&city=Invalid&key=87879849838292
+
 
 
 ### Dependencies: 
